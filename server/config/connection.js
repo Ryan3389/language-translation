@@ -1,5 +1,6 @@
+require('dotenv').config()
 const { connect, connection } = require("mongoose")
 
-connect('mongodb://127.0.0.1:27017/language-translation');
+connect(process.env.DB_URL);
 
 module.exports = connection
