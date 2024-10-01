@@ -29,7 +29,7 @@ const translate = async (req, res) => {
         res.status(200).json({ translatedText })
 
     } catch (error) {
-        console.error('ai error, translateControllers.js:  ', error)
+        console.error('translate function, translateControllers.js: ', error)
     }
 }
 
